@@ -80,6 +80,67 @@
   font-size: 28px;
 }
 
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #293241;
+
+  span {
+    color: #929aaa;
+  }
+}
+
+.tradeForm {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #293241;
+    border-radius: 8px;
+    background: #0b0e14;
+    color: #f3f4f6;
+  }
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  button {
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.buy {
+  background: #15803d;
+}
+
+.sell {
+  background: #b91c1c;
+}
+
+.message {
+  min-height: 20px;
+  margin-top: 16px;
+  font-size: 13px;
+}
+
 @media (max-width: 800px) {
   .dashboard {
     grid-template-columns: 1fr;
