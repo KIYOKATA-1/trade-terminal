@@ -1,7 +1,36 @@
-.main {
-  min-height: 100vh;
-  padding: 32px;
-  background-color: #0a0a0a;
-  color: #ededed;
-  font-family: Arial, Helvetica, sans-serif;
+.market {
+  margin-top: 32px;
+  border: 1px solid #293241;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.asset {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-bottom: 1px solid #293241;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  h2 {
+    margin: 0 0 4px;
+    font-size: 18px;
+  }
+
+  strong {
+    font-size: 18px;
+  }
+}
+
+.positive {
+  color: #22c55e;
+}
+
+.negative {
+  color: #ef4444;
 }
